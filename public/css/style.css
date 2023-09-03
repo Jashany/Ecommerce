@@ -1,0 +1,131 @@
+/* Reset some default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the container horizontally and vertically */
+body {
+    
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 1cm;
+    background-color: #f2f2f2;
+}
+
+/* Style for the container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the left side */
+.left-side {
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+}
+
+.left-side p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.left-side input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.left-side button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.left-side button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the button separator */
+
+
+/* Style for the right side */
+.right-side {
+    width: 60%;
+}
+
+/* Style for the video player */
+#videoElement {
+    width: 100%;
+    height: auto;
+}
+
+#result{
+    padding-top: 2cm;
+}
+
+.team-container {
+    display: flex;
+
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.team-left-section {
+    display: flex;
+    align-items: center;
+}
+
+.team-left-section img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.team-right-section h2 {
+    font-size: 20px;
+    color: #333;
+    font-weight: normal;
+    padding-right: 1cm;
+    padding-top: 0.35cm;
+}
+
+#nex-button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.center{
+    text-align: center;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+}

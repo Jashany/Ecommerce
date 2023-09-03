@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="team-container">
+        <div class="team-left-section">
+            
+            <h2>Hello, <%= user.username %></h2>
+        </div>
+        <div class="team-right-section">
+            <h2>Total Score: <span id="totalScore">10000</span></h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-side">
+            <p>Welcome</p>
+            <p id="paragraph" style="font-size: 30px;">Hello</p>
+            <input type="number" id="betAmount" placeholder="Enter your Bet">
+            <button id="up-button" onclick="calculateResultMoney('up')">Bet UP</button>
+            
+            <button id="down-button" onclick="calculateResultMoney('low')">Bet Down</button>
+            <p id="result">Result Money: <span id="resultMoney">-</span></p>
+            <div>
+                <p id="timer"></p>
+            </div>
+        </div>
+        <div class="right-side">
+            <video id="videoElement" controls>
+                <source src="/videos/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+    </div>
+    <div class="center"><button id="nex-button" onclick="resetbutton()" disabled>Next</button></div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+    <script>
+        const video = document.getElementById('videoElement');
+        const socket = io();
+
+        socket.on('play', () => {
+            video.play();
+        });
+
+        socket.on('pause', () => {
+            video.pause();
+        });
+        video.controls = false;
+    </script>
+</body>
+<script src="/js/dashboard.js"></script>
+</html>

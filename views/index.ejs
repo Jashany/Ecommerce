@@ -1,0 +1,28 @@
+
+<!-- views/register.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/css/registerstyle.css">
+  <title>Register</title>
+</head>
+<body>
+  <div class="container">
+    <div class="animation">
+     
+      <span class="word" id="escape">VentureWise</span>
+    </div>
+    <div class="register-form">
+      <h2>Register</h2>
+      <form action="/signup" method="POST">
+        <input type="text" name = "username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a href="/login">Login</a></p>
+    </div>
+    
+  </div>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
